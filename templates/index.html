@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block body %}
+    <div id="main-nav" class="navbar navbar-inverse bs-docs-nav" role="banner" >
+        <div class="container">
+            <div class="navbar-header responsive-logo">
+                <div class="navbar-brand">
+                    <a href="/"><img src="/static/img/1.png" style="height: 35px"></a>
+                </div>
+            </div>
+            <nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
+                <ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
+                    <li><a id="navbar-nav-list-home" href="">欢迎登陆</a></li>
+                    <li><a id="navbar-nav-list-testimonials" href="">用户名:{{ request.user }}</a></li>
+                    <li><a id="navbar-nav-list-pricing" href="/accounts/logout" class="btn btn-primary"> 注销</a></li>
+                    <li><a target="_blank" id="admin" href="/admin" class="btn btn-primary">后台管理</a></li>
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <h1 class="text-center">欢迎登陆</h1>
+{% endblock %}
