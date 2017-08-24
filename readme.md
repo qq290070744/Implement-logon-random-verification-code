@@ -136,10 +136,10 @@ login视图:
     
         return render(request,'index.html')
     
-    </code></pre>
+ </code></pre>
     
 template文件 :
-
+    <pre><code>
     {% extends 'base.html' %}
      
     {% block body %}
